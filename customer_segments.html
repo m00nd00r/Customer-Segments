@@ -207,7 +207,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -262,7 +262,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -389,7 +389,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">f</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
@@ -933,7 +933,7 @@ ERERERGRhvX/AY73dDRNWOaiAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[297]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -943,6 +943,7 @@ ERERERGRhvX/AY73dDRNWOaiAAAAAElFTkSuQmCC
 <span class="n">samples</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">indices</span><span class="p">],</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
 <span class="k">print</span> <span class="s2">&quot;Chosen samples of wholesale customers dataset:&quot;</span>
 <span class="n">display</span><span class="p">(</span><span class="n">samples</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
 </pre></div>
 
 </div>
@@ -1011,6 +1012,102 @@ ERERERGRhvX/AY73dDRNWOaiAAAAAElFTkSuQmCC
 
 </div>
 
+<div class="output_area"><div class="prompt"></div>
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Fresh</th>
+      <th>Milk</th>
+      <th>Grocery</th>
+      <th>Frozen</th>
+      <th>Detergents_Paper</th>
+      <th>Delicatessen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>440.000000</td>
+      <td>440.000000</td>
+      <td>440.000000</td>
+      <td>440.000000</td>
+      <td>440.000000</td>
+      <td>440.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>12000.297727</td>
+      <td>5796.265909</td>
+      <td>7951.277273</td>
+      <td>3071.931818</td>
+      <td>2881.493182</td>
+      <td>1524.870455</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>12647.328865</td>
+      <td>7380.377175</td>
+      <td>9503.162829</td>
+      <td>4854.673333</td>
+      <td>4767.854448</td>
+      <td>2820.105937</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>3.000000</td>
+      <td>55.000000</td>
+      <td>3.000000</td>
+      <td>25.000000</td>
+      <td>3.000000</td>
+      <td>3.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>3127.750000</td>
+      <td>1533.000000</td>
+      <td>2153.000000</td>
+      <td>742.250000</td>
+      <td>256.750000</td>
+      <td>408.250000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>8504.000000</td>
+      <td>3627.000000</td>
+      <td>4755.500000</td>
+      <td>1526.000000</td>
+      <td>816.500000</td>
+      <td>965.500000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>16933.750000</td>
+      <td>7190.250000</td>
+      <td>10655.750000</td>
+      <td>3554.250000</td>
+      <td>3922.000000</td>
+      <td>1820.250000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>112151.000000</td>
+      <td>73498.000000</td>
+      <td>92780.000000</td>
+      <td>60869.000000</td>
+      <td>40827.000000</td>
+      <td>47943.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1033,9 +1130,9 @@ ERERERGRhvX/AY73dDRNWOaiAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p><em>The first data point comes from the Retail channel from the Other Regions. Retail channel from Other Regions I might think of as smaller markets that would sell a variety of foods and housewares at the lower end of price spectrum, or maybe even high volumn stores, something like 'big box' stores here. Well above the mean and median in Detergents_Paper and Delicatessen suggest this kind of store.</em></p>
-<p><em>The second data point comes from the HoReCa channel from the Lisbon Region. With such a huge volume in Fresh, Grocery, and Milk, comparatively, this sample could be a higher end restaurant from Lisbon. But the volumes suggest maybe a buyer for a popular chain as well.</em></p>
-<p><em>The third data point comes from the Retail channel from the Oporto Region. This one looks to be pretty high spender with highest spending in Grocery, Milk, and Detergents_Paper, this one seems like a fairly large super-market.</em></p>
+<p><em>The first data point comes from the Retail channel from the Other Regions. This sample is very close to the mean for Milk, Grocery, Detergents_Paper, and Delicatessen; in fact in the lower part of the 3rd quartile for each. It has relatively low spending in Fresh and Frozen as the values are significantly below the mean in these. I would guess that this sample is a grocery store since grocery do carry quite a lot of milk, groceries, deli foods as well as household cleaning items.</em></p>
+<p><em>The second data point comes from the HoReCa channel from the Lisbon Region. This sample has spending in Fresh that is significantly higher than the mean, with Milk, Grocery, and Frozen very close to the mean and Detergents_Paper and Delicatessen significantly lower than the mean. The highe spending in unprepared food items suggest to me that this would likely be a restaurant.</em></p>
+<p><em>The third data point comes from the Retail channel from the Oporto Region. This sample has spending in Grocery and Detergents_Paper significantly higher than the mean with above average spending in Milk and Delicatessen and significantly lower spending in Fresh and Frozen. I would guess that this is a market that sells mostly prepared foods.</em></p>
 
 </div>
 </div>
@@ -1062,7 +1159,7 @@ ERERERGRhvX/AY73dDRNWOaiAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[298]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">cross_validation</span> <span class="k">as</span> <span class="n">cv</span>
@@ -1143,7 +1240,7 @@ ERERERGRhvX/AY73dDRNWOaiAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -2581,7 +2678,8 @@ QgghcpAKkxBCCCGEEELkIBUmIYQQQgghhMjh/wM6Wr/L5pQX4gAAAABJRU5ErkJggg==
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>This confirms my scores above with Detergents_Paper, Grocery, and Milk showing the most correlation.</p>
+<p><em>This confirms my scores above with Detergents_Paper, Grocery, and Milk showing the most correlation as the data show a strong distribution upwards to the right, indicating a relationship.</em></p>
+<p><em>The data for all of these distributions is highly skewed away from the normal with most of the data points distributed quite closely to the origin. This analysis will benefit most from scaling and normalizing the data.</em></p>
 
 </div>
 </div>
@@ -2613,7 +2711,7 @@ QgghcpAKkxBCCCGEEELkIBUmIYQQQgghhMjh/wM6Wr/L5pQX4gAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[299]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -5440,7 +5538,7 @@ jjHGGGOMMSZ0rKFjjDHGGGOMCR1r6BhjjDHGGGNCxxo6xhhjjDHGmNCxho4xxhhjjDEmdP4fgbM1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[300]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -5531,7 +5629,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[301]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For each feature find the data points with extreme high or low values</span>
@@ -6193,12 +6291,474 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[302]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="nb">dir</span><span class="p">(</span><span class="n">log_data</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[27]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&apos;Delicatessen&apos;,
+ &apos;Detergents_Paper&apos;,
+ &apos;Fresh&apos;,
+ &apos;Frozen&apos;,
+ &apos;Grocery&apos;,
+ &apos;Milk&apos;,
+ &apos;T&apos;,
+ &apos;_AXIS_ALIASES&apos;,
+ &apos;_AXIS_IALIASES&apos;,
+ &apos;_AXIS_LEN&apos;,
+ &apos;_AXIS_NAMES&apos;,
+ &apos;_AXIS_NUMBERS&apos;,
+ &apos;_AXIS_ORDERS&apos;,
+ &apos;_AXIS_REVERSED&apos;,
+ &apos;_AXIS_SLICEMAP&apos;,
+ &apos;__abs__&apos;,
+ &apos;__add__&apos;,
+ &apos;__and__&apos;,
+ &apos;__array__&apos;,
+ &apos;__array_wrap__&apos;,
+ &apos;__bool__&apos;,
+ &apos;__bytes__&apos;,
+ &apos;__class__&apos;,
+ &apos;__contains__&apos;,
+ &apos;__delattr__&apos;,
+ &apos;__delitem__&apos;,
+ &apos;__dict__&apos;,
+ &apos;__dir__&apos;,
+ &apos;__div__&apos;,
+ &apos;__doc__&apos;,
+ &apos;__eq__&apos;,
+ &apos;__finalize__&apos;,
+ &apos;__floordiv__&apos;,
+ &apos;__format__&apos;,
+ &apos;__ge__&apos;,
+ &apos;__getattr__&apos;,
+ &apos;__getattribute__&apos;,
+ &apos;__getitem__&apos;,
+ &apos;__getstate__&apos;,
+ &apos;__gt__&apos;,
+ &apos;__hash__&apos;,
+ &apos;__iadd__&apos;,
+ &apos;__idiv__&apos;,
+ &apos;__imul__&apos;,
+ &apos;__init__&apos;,
+ &apos;__invert__&apos;,
+ &apos;__ipow__&apos;,
+ &apos;__isub__&apos;,
+ &apos;__iter__&apos;,
+ &apos;__itruediv__&apos;,
+ &apos;__le__&apos;,
+ &apos;__len__&apos;,
+ &apos;__lt__&apos;,
+ &apos;__mod__&apos;,
+ &apos;__module__&apos;,
+ &apos;__mul__&apos;,
+ &apos;__ne__&apos;,
+ &apos;__neg__&apos;,
+ &apos;__new__&apos;,
+ &apos;__nonzero__&apos;,
+ &apos;__or__&apos;,
+ &apos;__pow__&apos;,
+ &apos;__radd__&apos;,
+ &apos;__rand__&apos;,
+ &apos;__rdiv__&apos;,
+ &apos;__reduce__&apos;,
+ &apos;__reduce_ex__&apos;,
+ &apos;__repr__&apos;,
+ &apos;__rfloordiv__&apos;,
+ &apos;__rmod__&apos;,
+ &apos;__rmul__&apos;,
+ &apos;__ror__&apos;,
+ &apos;__round__&apos;,
+ &apos;__rpow__&apos;,
+ &apos;__rsub__&apos;,
+ &apos;__rtruediv__&apos;,
+ &apos;__rxor__&apos;,
+ &apos;__setattr__&apos;,
+ &apos;__setitem__&apos;,
+ &apos;__setstate__&apos;,
+ &apos;__sizeof__&apos;,
+ &apos;__str__&apos;,
+ &apos;__sub__&apos;,
+ &apos;__subclasshook__&apos;,
+ &apos;__truediv__&apos;,
+ &apos;__unicode__&apos;,
+ &apos;__weakref__&apos;,
+ &apos;__xor__&apos;,
+ &apos;_accessors&apos;,
+ &apos;_add_numeric_operations&apos;,
+ &apos;_add_series_only_operations&apos;,
+ &apos;_add_series_or_dataframe_operations&apos;,
+ &apos;_agg_by_level&apos;,
+ &apos;_align_frame&apos;,
+ &apos;_align_series&apos;,
+ &apos;_apply_broadcast&apos;,
+ &apos;_apply_empty_result&apos;,
+ &apos;_apply_raw&apos;,
+ &apos;_apply_standard&apos;,
+ &apos;_at&apos;,
+ &apos;_box_col_values&apos;,
+ &apos;_box_item_values&apos;,
+ &apos;_check_inplace_setting&apos;,
+ &apos;_check_is_chained_assignment_possible&apos;,
+ &apos;_check_percentile&apos;,
+ &apos;_check_setitem_copy&apos;,
+ &apos;_clear_item_cache&apos;,
+ &apos;_combine_const&apos;,
+ &apos;_combine_frame&apos;,
+ &apos;_combine_match_columns&apos;,
+ &apos;_combine_match_index&apos;,
+ &apos;_combine_series&apos;,
+ &apos;_combine_series_infer&apos;,
+ &apos;_compare_frame&apos;,
+ &apos;_compare_frame_evaluate&apos;,
+ &apos;_consolidate_inplace&apos;,
+ &apos;_construct_axes_dict&apos;,
+ &apos;_construct_axes_dict_for_slice&apos;,
+ &apos;_construct_axes_dict_from&apos;,
+ &apos;_construct_axes_from_arguments&apos;,
+ &apos;_constructor&apos;,
+ &apos;_constructor_expanddim&apos;,
+ &apos;_constructor_sliced&apos;,
+ &apos;_convert&apos;,
+ &apos;_count_level&apos;,
+ &apos;_create_indexer&apos;,
+ &apos;_dir_additions&apos;,
+ &apos;_dir_deletions&apos;,
+ &apos;_ensure_valid_index&apos;,
+ &apos;_expand_axes&apos;,
+ &apos;_flex_compare_frame&apos;,
+ &apos;_from_arrays&apos;,
+ &apos;_from_axes&apos;,
+ &apos;_get_agg_axis&apos;,
+ &apos;_get_axis&apos;,
+ &apos;_get_axis_name&apos;,
+ &apos;_get_axis_number&apos;,
+ &apos;_get_axis_resolvers&apos;,
+ &apos;_get_block_manager_axis&apos;,
+ &apos;_get_bool_data&apos;,
+ &apos;_get_cacher&apos;,
+ &apos;_get_index_resolvers&apos;,
+ &apos;_get_item_cache&apos;,
+ &apos;_get_numeric_data&apos;,
+ &apos;_get_values&apos;,
+ &apos;_getitem_array&apos;,
+ &apos;_getitem_column&apos;,
+ &apos;_getitem_frame&apos;,
+ &apos;_getitem_multilevel&apos;,
+ &apos;_getitem_slice&apos;,
+ &apos;_iat&apos;,
+ &apos;_iget_item_cache&apos;,
+ &apos;_iloc&apos;,
+ &apos;_indexed_same&apos;,
+ &apos;_info_axis&apos;,
+ &apos;_info_axis_name&apos;,
+ &apos;_info_axis_number&apos;,
+ &apos;_info_repr&apos;,
+ &apos;_init_dict&apos;,
+ &apos;_init_mgr&apos;,
+ &apos;_init_ndarray&apos;,
+ &apos;_internal_names&apos;,
+ &apos;_internal_names_set&apos;,
+ &apos;_is_cached&apos;,
+ &apos;_is_datelike_mixed_type&apos;,
+ &apos;_is_mixed_type&apos;,
+ &apos;_is_numeric_mixed_type&apos;,
+ &apos;_is_view&apos;,
+ &apos;_ix&apos;,
+ &apos;_ixs&apos;,
+ &apos;_join_compat&apos;,
+ &apos;_loc&apos;,
+ &apos;_maybe_cache_changed&apos;,
+ &apos;_maybe_update_cacher&apos;,
+ &apos;_metadata&apos;,
+ &apos;_needs_reindex_multi&apos;,
+ &apos;_nsorted&apos;,
+ &apos;_protect_consolidate&apos;,
+ &apos;_reduce&apos;,
+ &apos;_reindex_axes&apos;,
+ &apos;_reindex_axis&apos;,
+ &apos;_reindex_columns&apos;,
+ &apos;_reindex_index&apos;,
+ &apos;_reindex_multi&apos;,
+ &apos;_reindex_with_indexers&apos;,
+ &apos;_repr_fits_horizontal_&apos;,
+ &apos;_repr_fits_vertical_&apos;,
+ &apos;_repr_html_&apos;,
+ &apos;_repr_latex_&apos;,
+ &apos;_reset_cache&apos;,
+ &apos;_reset_cacher&apos;,
+ &apos;_sanitize_column&apos;,
+ &apos;_series&apos;,
+ &apos;_set_as_cached&apos;,
+ &apos;_set_axis&apos;,
+ &apos;_set_axis_name&apos;,
+ &apos;_set_is_copy&apos;,
+ &apos;_set_item&apos;,
+ &apos;_setitem_array&apos;,
+ &apos;_setitem_frame&apos;,
+ &apos;_setitem_slice&apos;,
+ &apos;_setup_axes&apos;,
+ &apos;_slice&apos;,
+ &apos;_stat_axis&apos;,
+ &apos;_stat_axis_name&apos;,
+ &apos;_stat_axis_number&apos;,
+ &apos;_typ&apos;,
+ &apos;_unpickle_frame_compat&apos;,
+ &apos;_unpickle_matrix_compat&apos;,
+ &apos;_update_inplace&apos;,
+ &apos;_validate_dtype&apos;,
+ &apos;_values&apos;,
+ &apos;_xs&apos;,
+ &apos;abs&apos;,
+ &apos;add&apos;,
+ &apos;add_prefix&apos;,
+ &apos;add_suffix&apos;,
+ &apos;align&apos;,
+ &apos;all&apos;,
+ &apos;any&apos;,
+ &apos;append&apos;,
+ &apos;apply&apos;,
+ &apos;applymap&apos;,
+ &apos;as_blocks&apos;,
+ &apos;as_matrix&apos;,
+ &apos;asfreq&apos;,
+ &apos;assign&apos;,
+ &apos;astype&apos;,
+ &apos;at&apos;,
+ &apos;at_time&apos;,
+ &apos;axes&apos;,
+ &apos;between_time&apos;,
+ &apos;bfill&apos;,
+ &apos;blocks&apos;,
+ &apos;bool&apos;,
+ &apos;boxplot&apos;,
+ &apos;clip&apos;,
+ &apos;clip_lower&apos;,
+ &apos;clip_upper&apos;,
+ &apos;columns&apos;,
+ &apos;combine&apos;,
+ &apos;combineAdd&apos;,
+ &apos;combineMult&apos;,
+ &apos;combine_first&apos;,
+ &apos;compound&apos;,
+ &apos;consolidate&apos;,
+ &apos;convert_objects&apos;,
+ &apos;copy&apos;,
+ &apos;corr&apos;,
+ &apos;corrwith&apos;,
+ &apos;count&apos;,
+ &apos;cov&apos;,
+ &apos;cummax&apos;,
+ &apos;cummin&apos;,
+ &apos;cumprod&apos;,
+ &apos;cumsum&apos;,
+ &apos;describe&apos;,
+ &apos;diff&apos;,
+ &apos;div&apos;,
+ &apos;divide&apos;,
+ &apos;dot&apos;,
+ &apos;drop&apos;,
+ &apos;drop_duplicates&apos;,
+ &apos;dropna&apos;,
+ &apos;dtypes&apos;,
+ &apos;duplicated&apos;,
+ &apos;empty&apos;,
+ &apos;eq&apos;,
+ &apos;equals&apos;,
+ &apos;eval&apos;,
+ &apos;ewm&apos;,
+ &apos;expanding&apos;,
+ &apos;ffill&apos;,
+ &apos;fillna&apos;,
+ &apos;filter&apos;,
+ &apos;first&apos;,
+ &apos;first_valid_index&apos;,
+ &apos;floordiv&apos;,
+ &apos;from_csv&apos;,
+ &apos;from_dict&apos;,
+ &apos;from_items&apos;,
+ &apos;from_records&apos;,
+ &apos;ftypes&apos;,
+ &apos;ge&apos;,
+ &apos;get&apos;,
+ &apos;get_dtype_counts&apos;,
+ &apos;get_ftype_counts&apos;,
+ &apos;get_value&apos;,
+ &apos;get_values&apos;,
+ &apos;groupby&apos;,
+ &apos;gt&apos;,
+ &apos;head&apos;,
+ &apos;hist&apos;,
+ &apos;iat&apos;,
+ &apos;icol&apos;,
+ &apos;idxmax&apos;,
+ &apos;idxmin&apos;,
+ &apos;iget_value&apos;,
+ &apos;iloc&apos;,
+ &apos;index&apos;,
+ &apos;info&apos;,
+ &apos;insert&apos;,
+ &apos;interpolate&apos;,
+ &apos;irow&apos;,
+ &apos;is_copy&apos;,
+ &apos;isin&apos;,
+ &apos;isnull&apos;,
+ &apos;iteritems&apos;,
+ &apos;iterkv&apos;,
+ &apos;iterrows&apos;,
+ &apos;itertuples&apos;,
+ &apos;ix&apos;,
+ &apos;join&apos;,
+ &apos;keys&apos;,
+ &apos;kurt&apos;,
+ &apos;kurtosis&apos;,
+ &apos;last&apos;,
+ &apos;last_valid_index&apos;,
+ &apos;le&apos;,
+ &apos;loc&apos;,
+ &apos;lookup&apos;,
+ &apos;lt&apos;,
+ &apos;mad&apos;,
+ &apos;mask&apos;,
+ &apos;max&apos;,
+ &apos;mean&apos;,
+ &apos;median&apos;,
+ &apos;memory_usage&apos;,
+ &apos;merge&apos;,
+ &apos;min&apos;,
+ &apos;mod&apos;,
+ &apos;mode&apos;,
+ &apos;mul&apos;,
+ &apos;multiply&apos;,
+ &apos;ndim&apos;,
+ &apos;ne&apos;,
+ &apos;nlargest&apos;,
+ &apos;notnull&apos;,
+ &apos;nsmallest&apos;,
+ &apos;pct_change&apos;,
+ &apos;pipe&apos;,
+ &apos;pivot&apos;,
+ &apos;pivot_table&apos;,
+ &apos;plot&apos;,
+ &apos;pop&apos;,
+ &apos;pow&apos;,
+ &apos;prod&apos;,
+ &apos;product&apos;,
+ &apos;quantile&apos;,
+ &apos;query&apos;,
+ &apos;radd&apos;,
+ &apos;rank&apos;,
+ &apos;rdiv&apos;,
+ &apos;reindex&apos;,
+ &apos;reindex_axis&apos;,
+ &apos;reindex_like&apos;,
+ &apos;rename&apos;,
+ &apos;rename_axis&apos;,
+ &apos;reorder_levels&apos;,
+ &apos;replace&apos;,
+ &apos;resample&apos;,
+ &apos;reset_index&apos;,
+ &apos;rfloordiv&apos;,
+ &apos;rmod&apos;,
+ &apos;rmul&apos;,
+ &apos;rolling&apos;,
+ &apos;round&apos;,
+ &apos;rpow&apos;,
+ &apos;rsub&apos;,
+ &apos;rtruediv&apos;,
+ &apos;sample&apos;,
+ &apos;select&apos;,
+ &apos;select_dtypes&apos;,
+ &apos;sem&apos;,
+ &apos;set_axis&apos;,
+ &apos;set_index&apos;,
+ &apos;set_value&apos;,
+ &apos;shape&apos;,
+ &apos;shift&apos;,
+ &apos;size&apos;,
+ &apos;skew&apos;,
+ &apos;slice_shift&apos;,
+ &apos;sort&apos;,
+ &apos;sort_index&apos;,
+ &apos;sort_values&apos;,
+ &apos;sortlevel&apos;,
+ &apos;squeeze&apos;,
+ &apos;stack&apos;,
+ &apos;std&apos;,
+ &apos;style&apos;,
+ &apos;sub&apos;,
+ &apos;subtract&apos;,
+ &apos;sum&apos;,
+ &apos;swapaxes&apos;,
+ &apos;swaplevel&apos;,
+ &apos;tail&apos;,
+ &apos;take&apos;,
+ &apos;to_clipboard&apos;,
+ &apos;to_csv&apos;,
+ &apos;to_dense&apos;,
+ &apos;to_dict&apos;,
+ &apos;to_excel&apos;,
+ &apos;to_gbq&apos;,
+ &apos;to_hdf&apos;,
+ &apos;to_html&apos;,
+ &apos;to_json&apos;,
+ &apos;to_latex&apos;,
+ &apos;to_msgpack&apos;,
+ &apos;to_panel&apos;,
+ &apos;to_period&apos;,
+ &apos;to_pickle&apos;,
+ &apos;to_records&apos;,
+ &apos;to_sparse&apos;,
+ &apos;to_sql&apos;,
+ &apos;to_stata&apos;,
+ &apos;to_string&apos;,
+ &apos;to_timestamp&apos;,
+ &apos;to_wide&apos;,
+ &apos;to_xarray&apos;,
+ &apos;transpose&apos;,
+ &apos;truediv&apos;,
+ &apos;truncate&apos;,
+ &apos;tshift&apos;,
+ &apos;tz_convert&apos;,
+ &apos;tz_localize&apos;,
+ &apos;unstack&apos;,
+ &apos;update&apos;,
+ &apos;values&apos;,
+ &apos;var&apos;,
+ &apos;where&apos;,
+ &apos;xs&apos;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># I&#39;m curious to see how many outliers there are for the different list I created above.</span>
-<span class="k">print</span><span class="p">(</span><span class="n">good_data_1</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">good_data_2</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Customer data for outlier that is in 2 or more of the outlier lists&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">outliers</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">]])</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Customer data for outlier that is in 3 of the outlier lists&quot;</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">outliers</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">&gt;</span><span class="mi">2</span><span class="p">]]</span>
 </pre></div>
 
 </div>
@@ -6211,10 +6771,118 @@ Once you have performed this implementation, the dataset will be stored in the v
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(435, 6)
-(439, 6)
+<pre>Customer data for outlier that is in 2 or more of the outlier lists
 </pre>
 </div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Fresh</th>
+      <th>Milk</th>
+      <th>Grocery</th>
+      <th>Frozen</th>
+      <th>Detergents_Paper</th>
+      <th>Delicatessen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12669</td>
+      <td>9656</td>
+      <td>7561</td>
+      <td>214</td>
+      <td>2674</td>
+      <td>1338</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>7057</td>
+      <td>9810</td>
+      <td>9568</td>
+      <td>1762</td>
+      <td>3293</td>
+      <td>1776</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>6353</td>
+      <td>8808</td>
+      <td>7684</td>
+      <td>2405</td>
+      <td>3516</td>
+      <td>7844</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>13265</td>
+      <td>1196</td>
+      <td>4221</td>
+      <td>6404</td>
+      <td>507</td>
+      <td>1788</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>22615</td>
+      <td>5410</td>
+      <td>7198</td>
+      <td>3915</td>
+      <td>1777</td>
+      <td>5185</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Customer data for outlier that is in 3 of the outlier lists
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[86]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Fresh</th>
+      <th>Milk</th>
+      <th>Grocery</th>
+      <th>Frozen</th>
+      <th>Detergents_Paper</th>
+      <th>Delicatessen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12669</td>
+      <td>9656</td>
+      <td>7561</td>
+      <td>214</td>
+      <td>2674</td>
+      <td>1338</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
 </div>
 
 </div>
@@ -6271,7 +6939,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[303]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
@@ -7327,11 +7995,12 @@ iIiIiAS1fwLAccsXm/dsSQAAAABJRU5ErkJggg==
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
+<p>Here I'll analyze the last graph as it corresponds to the dataset with 1 outlier removed.</p>
 <p>The first 2 components explain 72% of the variation. The first 4 components explain over 93% of the variation.</p>
-<p>The 1st component shows high correlation with Detergents_Paper, Grocery, and Milk with a very little bit in Delicatessen.</p>
-<p>The 2nd component shows high correlation between Fresh, Frozen and Deli with very small effects from the rest.</p>
-<p>The 3rd component shows high correlation between Deli and Frozen with negative correlation to Detergents_Paper and Fresh.</p>
-<p>The 4th component shows high correlation on Frozen with a negative correlation to Deli.</p>
+<p>The 1st component shows high positive weigth on Detergents_Paper, with significant weight on Grocery, and Milk with a very small postive weigth on Delicatessen. This dimension is best categorized by spending on retail goods.</p>
+<p>The 2nd component shows high positive weight on Fresh, with significantly high weights for Frozen and Deli with very small effects from the rest. This dimension is best categorized by spending for restaurants.</p>
+<p>The 3rd component shows high positive weight on Deli with significantly high weight on Frozen with a large negative weight on Detergents_Paper and a smaller negative weight on Fresh. This dimension is best categorized by spending for cafes or small sandwich shops.</p>
+<p>The 4th component shows high positive weight on Frozen with positive weights on Detergents_Paper, Milk, and Grocery and negative weights on Delicatessen and Fresh. This dimension is best categorized by spending for small corner markets.</p>
 
 </div>
 </div>
@@ -7348,7 +8017,7 @@ iIiIiAS1fwLAccsXm/dsSQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[304]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after having a PCA transformation applied</span>
@@ -7436,7 +8105,7 @@ iIiIiAS1fwLAccsXm/dsSQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[305]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with only two dimensions</span>
@@ -7472,7 +8141,7 @@ iIiIiAS1fwLAccsXm/dsSQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[306]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after applying PCA transformation in two dimensions</span>
@@ -7581,7 +8250,7 @@ iIiIiAS1fwLAccsXm/dsSQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[307]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
@@ -7663,7 +8332,7 @@ For 6 clusters: 0.351343785807</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[308]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the results of the clustering from implementation</span>
@@ -8489,7 +9158,7 @@ CZYfSZIkSZVg+ZEkSZJUCf8fHMDbbIwBIEIAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[288]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Inverse transform the centers</span>
@@ -8694,7 +9363,7 @@ CZYfSZIkSZVg+ZEkSZJUCf8fHMDbbIwBIEIAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[290]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the predictions</span>
@@ -8758,12 +9427,12 @@ Sample point 2 predicted to be in Cluster 1
     </tr>
     <tr>
       <th>2</th>
-      <td>7588</td>
-      <td>1897</td>
-      <td>5234</td>
-      <td>417</td>
-      <td>2208</td>
-      <td>254</td>
+      <td>161</td>
+      <td>7460</td>
+      <td>24773</td>
+      <td>617</td>
+      <td>11783</td>
+      <td>2410</td>
     </tr>
   </tbody>
 </table>
@@ -8824,8 +9493,10 @@ Sample point 2 predicted to be in Cluster 1
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>My guess here is that the MGD segment will be far more tolerant of a decline in delivery service as their products typically have much longer shelf life and thus can afford to buy larger volumes and tolerate holding them on their shelves longer to accommodate less delivery service.</p>
-<p>However, the customers predicted to be a part of the FFD segment buy products that are quite perishable and very likely have businesses like fresh food markets and restaurants where they have high sales of these products on a daily basis. These customers would likely be very sensitive to delivery schedules, thus I would guess that they would respond most negatively to any decline in delivery service.</p>
+<p><em>My guess here is that the MGD segment will be far more tolerant of a decline in delivery service as their products typically have much longer shelf life and thus can afford to buy larger volumes and tolerate holding them on their shelves longer to accommodate less delivery service.</em></p>
+<p><em>However, the customers predicted to be a part of the FFD segment buy products that are quite perishable and very likely have businesses like fresh food markets and restaurants where they have high sales of these products on a daily basis. These customers would likely be very sensitive to delivery schedules, thus I would guess that they would respond most negatively to any decline in delivery service.</em></p>
+<p><em>Therefore, using this data analysis I would recommend that we initiate a test by selecting a sample of customers from the MGD segment and notifying them that the company will be reducing service from 5 deliveries per week to 3. Additionally, if any of them cannot accept this reduction to contact the company to request that no reduction in service apply to them. From there we can log requests for zero interruption in service as an indication of whether it would benefit the company from proceeding with this service change to this segment.</em></p>
+<p><em>Once completed, we can then do the same test for the FFD segment. The results of these tests should not only confirm whether our analysis was correct but also whether the company can afford to reduce services based on these segmentations.</em></p>
 
 </div>
 </div>
@@ -8867,7 +9538,7 @@ Sample point 2 predicted to be in Cluster 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[309]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">outliers2</span> <span class="o">=</span> <span class="n">outliers</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">&gt;</span><span class="mi">2</span>
@@ -8880,7 +9551,7 @@ Sample point 2 predicted to be in Cluster 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[310]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the clustering results based on &#39;Channel&#39; data</span>
