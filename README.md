@@ -1,5 +1,6 @@
-# Project 3: Unsupervised Learning
+# Unsupervised Learning
 ## Creating Customer Segments
+### see https://m00nd00r.github.io/Customer-Segments/ for project info
 
 ### Install
 
@@ -16,7 +17,7 @@ Udacity recommends our students install [Anaconda](https://www.continuum.io/down
 
 ### Code
 
-Template code is provided in the notebook `customer_segments.ipynb` notebook file. Additional supporting code can be found in `renders.py`. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project.
+Code is in the notebook `customer_segments.ipynb` notebook file. Additional supporting code can be found in `renders.py`.
 
 ### Run
 
