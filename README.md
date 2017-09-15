@@ -11,7 +11,7 @@ This project requires **Python 2.7** and the following Python libraries installe
 - [Matplotlib](http://matplotlib.org/)
 - [Scikit-learn](http://scikit-learn.org/stable/)
 
-You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
+You will also need to have software installed to run and execute a [Jupyter Notebook](http://ipython.org/notebook.html). Recommend using the Anaconda package and environment manager.
 
 ### Code
 
