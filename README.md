@@ -8,12 +8,10 @@ This project requires **Python 2.7** and the following Python libraries installe
 
 - [NumPy](http://www.numpy.org/)
 - [Pandas](http://pandas.pydata.org)
-- [matplotlib](http://matplotlib.org/)
-- [scikit-learn](http://scikit-learn.org/stable/)
+- [Matplotlib](http://matplotlib.org/)
+- [Scikit-learn](http://scikit-learn.org/stable/)
 
 You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
-
-Install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
 
 ### Code
 
@@ -23,10 +21,9 @@ Code is in the notebook `customer_segments.ipynb` notebook file. Additional supp
 
 In a terminal or command window, navigate to the top-level project directory `creating_customer_segments/` (that contains this README) and run one of the following commands:
 
-```ipython notebook customer_segments.ipynb```
 ```jupyter notebook customer_segments.ipynb```
 
-This will open the iPython Notebook software and project file in your browser.
+This will open the Jupyter Notebooks in your browser.
 
 ## Data
 
