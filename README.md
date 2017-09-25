@@ -2,7 +2,7 @@
 ## Creating Customer Segments
 ### see https://m00nd00r.github.io/Customer-Segments/ for project info
 
-#### Install
+### Install
 
 This project requires **Python 2.7** and the following Python libraries installed:
 
