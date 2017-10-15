@@ -2,16 +2,32 @@
 ## Creating Customer Segments
 ### see https://m00nd00r.github.io/Customer-Segments/ for project info
 
-### Install
+## Install
 
-This project requires **Python 2.7** and the following Python libraries installed:
+This project requires **Python 2** and uses the Anaconda package manager.
+If you haven't already please download and install Anaconda.
 
-- [NumPy](http://www.numpy.org/)
-- [Pandas](http://pandas.pydata.org)
-- [Matplotlib](http://matplotlib.org/)
-- [Scikit-learn](http://scikit-learn.org/stable/)
+Instructions:
+1. Clone the repository and navigate to the downloaded folder.
+	
+	```	
+		git clone https://github.com/m00nd00r/Custoner-Segments.git
+		cd Custoner-Segments
+	```
+    
+2. Obtain the necessary Python packages.  
+	
+	For __Mac/OSX/Linux__:
+	```
+		conda create -n segments python=2 numpy pandas matplotlib scikit-learn jupyter
+		source activate segments
+	```
 
-You will also need to have software installed to run and execute a [Jupyter Notebook](http://ipython.org/notebook.html). Recommend using the Anaconda package and environment manager.
+	For __Windows__:
+	```
+		conda create -n segments python=2 numpy pandas matplotlib scikit-learn jupyter
+		activate segments
+	```
 
 ### Code
 
