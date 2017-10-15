@@ -19,13 +19,13 @@ Instructions:
 	
 	For __Mac/OSX/Linux__:
 	```
-		conda create -n segments python=2 numpy pandas matplotlib scikit-learn jupyter
+		conda create -n segments python=2 numpy pandas matplotlib scikit-learn jupyter seaborn
 		source activate segments
 	```
 
 	For __Windows__:
 	```
-		conda create -n segments python=2 numpy pandas matplotlib scikit-learn jupyter
+		conda create -n segments python=2 numpy pandas matplotlib scikit-learn jupyter seaborn
 		activate segments
 	```
 
