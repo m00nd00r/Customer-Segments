@@ -31,17 +31,15 @@ Instructions:
 
 ### Code
 
-Code is in the notebook `customer_segments.ipynb` notebook file. Additional supporting code can be found in `renders.py`. To open and run the notebook:
-
-	```
-		jupyter notebook customer_segments.ipynb
-	```
+Code is in the notebook `customer_segments.ipynb` notebook file. Additional supporting code can be found in `renders.py`.
 
 ### Run
 
 In a terminal or command window, navigate to the top-level project directory `creating_customer_segments/` (that contains this README) and run the following commands:
 
-```jupyter notebook customer_segments.ipynb```
+	```
+		jupyter notebook customer_segments.ipynb
+	```
 
 This will open the Jupyter Notebooks in your browser.
 
