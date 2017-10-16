@@ -31,7 +31,11 @@ Instructions:
 
 ### Code
 
-Code is in the notebook `customer_segments.ipynb` notebook file. Additional supporting code can be found in `renders.py`.
+Code is in the notebook `customer_segments.ipynb` notebook file. Additional supporting code can be found in `renders.py`. To open and run the notebook:
+
+	```
+		jupyter notebook customer_segments.ipynb
+	```
 
 ### Run
 
