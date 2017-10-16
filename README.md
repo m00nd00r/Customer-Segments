@@ -19,13 +19,13 @@ Instructions:
 	
 	For __Mac/OSX/Linux__:
 	```
-		conda create -n segments python=2 numpy pandas matplotlib scikit-learn jupyter seaborn
+		conda env create -f requirements/segments-osx.yml
 		source activate segments
 	```
 
 	For __Windows__:
 	```
-		conda create -n segments python=2 numpy pandas matplotlib scikit-learn jupyter seaborn
+		conda env create -f requirements/segments-windows.yml
 		activate segments
 	```
 
