@@ -11,7 +11,7 @@ Instructions:
 1. Clone the repository and navigate to the downloaded folder.
 	
 	```	
-		git clone https://github.com/m00nd00r/Custoner-Segments.git
+		git clone https://github.com/m00nd00r/Customer-Segments.git
 		cd Custoner-Segments
 	```
     
