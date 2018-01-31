@@ -11,7 +11,7 @@ Instructions:
 1. Clone the repository and navigate to the downloaded folder.
 	
 	```	
-		git clone https://github.com/m00nd00r/Custoner-Segments.git
+		git clone https://github.com/m00nd00r/Customer-Segments.git
 		cd Custoner-Segments
 	```
     
@@ -19,13 +19,13 @@ Instructions:
 	
 	For __Mac/OSX/Linux__:
 	```
-		conda create -n segments python=2 numpy pandas matplotlib scikit-learn jupyter seaborn
+		conda env create -f requirements/segments-osx.yml
 		source activate segments
 	```
 
 	For __Windows__:
 	```
-		conda create -n segments python=2 numpy pandas matplotlib scikit-learn jupyter seaborn
+		conda env create -f requirements/segments-windows.yml
 		activate segments
 	```
 
@@ -35,12 +35,29 @@ Code is in the notebook `customer_segments.ipynb` notebook file. Additional supp
 
 ### Run
 
-In a terminal or command window, navigate to the top-level project directory `creating_customer_segments/` (that contains this README) and run the following commands:
+In a terminal or command window, navigate to the top-level project directory `creating_customer_segments/` (that contains this README) and run the following commands:  
 
-```jupyter notebook customer_segments.ipynb```
+```
+	jupyter notebook customer_segments.ipynb
+```
 
 This will open the Jupyter Notebooks in your browser.
 
 ## Data
 
-The dataset used in this project is included as `customers.csv`. You can find more information on this dataset on the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Wholesale+customers) page.
+The modified Wholesale Customers Dataset has 440 samples with each sample containing 8 features and is included as `customers.csv`. The data set refers to clients of a wholesale distributor. It includes the annual spending in monetary units (m.u.) on diverse product categories
+
+The CHANNEL feature is what will be held out to model for. You can find more information on this dataset on the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Wholesale+customers) page.
+
+**Features**
+1. `FRESH`: annual spending (m.u.) on fresh products (Continuous)
+2. `MILK`: annual spending (m.u.) on milk products (Continuous)
+3. `GROCERY`: annual spending (m.u.)on grocery products (Continuous)
+4. `FROZEN`: annual spending (m.u.)on frozen products (Continuous)
+5. `DETERGENTS_PAPER`: annual spending (m.u.) on detergents and paper products (Continuous)
+6. `DELICATESSEN`: annual spending (m.u.)on and delicatessen products (Continuous)
+7. `REGION`: customers' Region Lisbon, Oporto or Other (Nominal) 
+
+**Target Variable**
+
+8. `CHANNEL`: customers' Channel - Horeca (Hotel/Restaurant/Cafe) or Retail channel (Nominal)
